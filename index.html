@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
     <title>Student login form</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__nav">
+        <figure class="header__logo">LOGO</figure>
+        <nav class="navigation">
+          <button class="header__sign-in">Sign in</button>
+          <button class="header__log-in">Log in</button>
+        </nav>
+      </div>
+      <div class="header__content">
+        <h1 class="header__heading">Student registration form</h1>
+      </div>
+    </header>
+
+    <div class="sign-in">
+      <button class="sign-in__times">&times;</button>
+      <h2 class="sign-in__heading">Sign it to get started</h2>
+      <form class="sign-in__form">
+        <div class="form-group">
+          <label for="full-name">Full Name:</label>
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            class="full-name"
+            required
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="date">Date of birth:</label>
+          <input type="date" name="date" id="date" class="date" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="password"
+            required
+            placeholder="Enter your password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password-confirm">Confirm password:</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password"
+            class="confirm-password"
+            required
+            placeholder="Confirm your password"
+          />
+          <small class="error-msg"></small>
+        </div>
+        <button type="submit" class="sign-in__submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="log-in">
+      <h2 class="log-in__heading">Log in to get started</h2>
+      <form class="log-in log-in__modal">
+        <div class="form-group">
+          <label for="log-email">Email:</label>
+          <input
+            type="email"
+            name="log-email"
+            id="log-email"
+            class="log-email"
+            required
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="log-password">Password:</label>
+          <input
+            type="password"
+            name="log-password"
+            id="log-password"
+            class="log-password"
+            required
+            placeholder="Enter your password"
+          />
+        </div>
+        <button type="submit" class="log-in__submit">Log in</button>
+      </form>
+    </div>
+  </body>
 </html>
