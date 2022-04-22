@@ -53,7 +53,8 @@ body {
   margin-right: 12px;
 }
 
-.sign-in__modal {
+.sign-in {
+  display: none;
   background-color: #f4f4f4;
   color: #444;
   padding: 10px;
@@ -62,11 +63,6 @@ body {
   top: 14%;
   left: 34%;
   width: 30%;
-  display: block;
-  /* position: relative; */
-}
-
-.sign-in {
   display: none;
 }
 
@@ -101,7 +97,8 @@ body {
   outline: none;
 }
 
-.sign-in__times {
+.sign-in__times,
+.log-in__times {
   background-color: transparent;
   border: none;
   font-size: 30px;
@@ -123,7 +120,37 @@ body {
   display: inline;
 }
 
-.error-msg {
+.log-in {
+  background-color: #f4f4f4;
+  color: #444;
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.log-in__heading {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.log-in__submit {
+  background-color: #12b886;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 18px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error-msg,
+.log-error {
   color: #f34;
 }
 
